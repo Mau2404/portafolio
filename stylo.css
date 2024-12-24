@@ -1,0 +1,209 @@
+/* General */
+body {
+    font-family: Arial, sans-serif; /* Establece la fuente predeterminada del texto. */
+    margin: 0; /* Elimina los márgenes alrededor de la página. */
+    padding: 0; /* Elimina los rellenos alrededor de la página. */
+    background-color: #f0f8ff; /* Fondo azul claro para toda la página. */
+    color: #002147; /* Texto azul oscuro para facilitar la lectura. */
+}
+
+/* Encabezado */
+header {
+    background-color: #003366; /* Fondo azul fuerte para el encabezado. */
+    color: #ffffff; /* Texto blanco para contraste con el fondo. */
+    padding: 20px; /* Añade espacio interno alrededor del contenido del encabezado. */
+    text-align: center; /* Centra el texto del encabezado. */
+}
+
+header h1 {
+    margin: 0; /* Elimina el margen superior e inferior del título principal. */
+    font-size: 2.5em; /* Establece el tamaño de la fuente del título principal. */
+}
+
+nav ul {
+    list-style: none; /* Elimina los puntos o números de la lista de navegación. */
+    padding: 0; /* Elimina el relleno interno de la lista. */
+    margin: 0; /* Elimina los márgenes alrededor de la lista. */
+    display: flex; /* Hace que los elementos de la lista se organicen en línea. */
+    justify-content: center; /* Centra los elementos de la lista horizontalmente. */
+}
+
+nav ul li {
+    margin: 0 15px; /* Añade espacio horizontal entre los elementos del menú. */
+}
+
+nav ul li a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces. */
+    color: #ffffff; /* Establece el color del texto de los enlaces a blanco. */
+    font-weight: bold; /* Hace que el texto de los enlaces sea más grueso. */
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Añade un subrayado cuando se pasa el ratón sobre los enlaces. */
+}
+
+/* Secciones */
+section {
+    margin: 20px auto; /* Añade espacio superior e inferior y centra horizontalmente. */
+    padding: 20px; /* Añade espacio interno alrededor del contenido de las secciones. */
+    max-width: 1050px; /* Limita el ancho máximo de las secciones a 900px. */
+    background-color: #ffffff; /* Fondo blanco para las secciones. */
+    border-radius: 8px; /* Bordes redondeados para un diseño moderno. */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para un efecto de elevación. */
+}
+
+section h2 {
+    border-bottom: 2px solid #003366; /* Línea azul debajo de los títulos de las secciones. */
+    padding-bottom: 5px; /* Espacio entre el texto y la línea inferior. */
+    color: #003366; /* Color azul fuerte para los títulos de las secciones. */
+}
+
+section p, section ul {
+    margin: 15px 0; /* Añade espacio vertical alrededor de los párrafos y listas. */
+}
+
+/* Listas */
+ul {
+    padding-left: 20px; /* Añade sangría a las listas para mayor claridad. */
+}
+
+ul li {
+    margin-bottom: 10px; /* Añade espacio entre los elementos de las listas. */
+}
+
+
+/* Contenedor Flexbox */
+.matriz {
+    display: flex; /* Activa el modo Flexbox */
+     /* Espacia uniformemente los elementos */
+    flex-direction:column;
+    align-items: center; /* Centra los elementos verticalmente */
+    /* Permite que los elementos se ajusten a varias líneas */
+    gap: 20px; /* Espaciado entre los elementos */
+    padding: 20px; /* Espaciado interno del contenedor */
+    background-color: #e0e0e0; /* Fondo gris claro */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+.fila {
+    display: flex;
+    flex-direction:horizontal;
+    gap:15px;
+}
+
+
+/* Elementos Flexbox */
+.cuadro {
+    background-color: #4386a8; /* Fondo azul intermedio */
+    
+    color: white; /* Texto blanco */
+    padding: 20px; /* Espaciado interno */
+    text-align: center; /* Centra el texto */
+    flex: 1; /* Hace que todos los elementos crezcan proporcionalmente */
+    width: 200px; /* Tamaño mínimo de los elementos */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra alrededor de los elementos */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Galería */
+section#galeria div {
+    display: flex; /* Organiza los elementos de la galería en línea. */
+    justify-content: space-around; /* Distribuye los elementos con espacio entre ellos. */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en varias líneas si es necesario. */
+    gap: 15px; /* Espaciado uniforme entre elementos de la galería. */
+}
+
+section#galeria div div {
+    display: flex; /* Organiza los elementos de la galería en línea. */
+    flex-direction:column;
+    align-items: center;
+    justify-content: center; /* Distribuye los elementos con espacio entre ellos. */
+    gap: 15px; /* Espaciado uniforme entre elementos de la galería. */
+}
+
+section#galeria div div img {
+    border: 2px solid #003366; /* Añade un borde azul alrededor de las imágenes. */
+    border-radius: 8px; /* Bordes redondeados para las imágenes. */
+    width: 200px; /* Fija el ancho de las imágenes a 200px. */
+    height: 200px; /* Ajusta automáticamente la altura para mantener la proporción. */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave para resaltar las imágenes. */
+
+
+}
+
+
+
+
+
+/* Contenedor del formulario */
+.form-container {
+    width: 100%; /* Ocupa el 100% del ancho disponible. */
+    max-width: 400px; /* Limita el ancho máximo del formulario. */
+    background-color: #ffffff; /* Fondo blanco para contraste. */
+    padding: 20px; /* Espaciado interno del formulario. */
+    border-radius: 8px; /* Bordes redondeados para un diseño más agradable. */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad. */
+}
+
+/* Título del formulario */
+.form-container h2 {
+    text-align: center; /* Centra el texto del título. */
+    color: #004a8f; /* Azul oscuro para resaltar. */
+    margin-bottom: 20px; /* Espaciado inferior para separar del formulario. */
+}
+
+/* Campos del formulario */
+.form-container input, .form-container textarea {
+    width: 100%; /* Ocupa todo el ancho del contenedor. */
+    padding: 10px; /* Espaciado interno para comodidad al escribir. */
+    margin-bottom: 15px; /* Espaciado inferior entre los campos. */
+    border: 1px solid #ccc; /* Borde gris claro. */
+    border-radius: 5px; /* Bordes redondeados. */
+    font-size: 16px; /* Tamaño de texto estándar. */
+}
+
+/* Botón de envío del formulario */
+.form-container button {
+    width: 100%; /* Ocupa todo el ancho disponible. */
+    padding: 10px; /* Espaciado interno. */
+    background-color: #004a8f; /* Fondo azul oscuro. */
+    color: #ffffff; /* Texto blanco. */
+    font-size: 16px; /* Tamaño del texto del botón. */
+    border: none; /* Sin borde adicional. */
+    border-radius: 5px; /* Bordes redondeados. */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón. */
+    transition: background-color 0.3s ease; /* Transición suave al cambiar el color. */
+}
+
+
+
+
+
+/* Pie de página */
+footer {
+    background-color: #003366; /* Fondo azul fuerte para el pie de página. */
+    color: #ffffff; /* Texto blanco para contraste con el fondo. */
+    text-align: center; /* Centra el texto en el pie de página. */
+    padding: 15px; /* Añade espacio interno alrededor del contenido del pie de página. */
+    margin-top: 20px; /* Espacio superior para separar el pie de página del contenido principal. */
+}
+
+footer a {
+    color: #00bfff; /* Azul cielo para los enlaces en el pie de página. */
+    text-decoration: none; /* Elimina el subrayado de los enlaces en el pie de página. */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Añade un subrayado al pasar el ratón sobre los enlaces. */
+}
